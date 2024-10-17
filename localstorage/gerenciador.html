@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+</head>
+<body>
+    <div>
+    <label for="id">Digite um id</label>
+    <input type="number" name="identification" id="identification">
+    </div>
+    <div>
+    <label for="Nome">Seu Nome</label>
+    <input type="text" name="nome" id="nome">
+    </div>
+    <div>
+        <label for="Descricao">Digite uma descricao</label>
+        <input type="text" name="descricao" id="descricao">
+    </div>
+    <div>
+        <label for="Data">Data</label>
+        <input type="date" name="date" id="date">
+    </div>
+    <div>
+        <label for="Hora">Hora</label>
+        <input type="time" name="time" id="time">
+    </div>
+<div>
+    <button type="button" onclick="salvarTarefas()">Salvar Tarefas</button>
+</div>
+<div>
+    <button type="button">Exibir Tarefas</button>
+</div>
+<div>
+    <button type="button">Excluir tarefas</button>
+</div>
+<div>
+    
+</div>
+</body>
+<script>
+    function 
+        salvarTarefas(){
+        const id = document.getElementById ("identification").value;
+        localStorage.setItem("identification",id);
+        const nome = document.getElementById ("nome").value;
+        localStorage.setItem("nome",nome);
+        const descricao = document.getElementById("descricao").value;
+        localStorage.setItem("descricao",descricao);
+        const date = document.getElementById ("date").value;
+        localStorage.setItem("date",date);
+        const time = document.getElementById("time").value;
+        localStorage.setItem("time",time);
+        alert ("Tarefa salva com sucesso!");
+
+    }
+</script>
+</html>
